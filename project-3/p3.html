@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid green;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Color Switching -->
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span> 
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About us</h1>
+    <img src="food.jpg" alt="">
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quam nobis optio minima impedit voluptatum perferendis nesciunt quibusdam, ducimus, nulla qui earum officiis ea, dolorem vitae illo consequatur repudiandae praesentium quod. Ratione exercitationem quasi nostrum vitae aliquam, laboriosam totam blanditiis, unde aperiam, est voluptatibus? Incidunt voluptate dolores velit laboriosam, quidem aut cupiditate beatae non dicta ratione animi exercitationem maxime facilis architecto id perspiciatis repellat ipsa placeat molestiae! Ullam a eaque dolores consequatur voluptatem beatae sequi in libero quidem quisquam! Laboriosam quod labore praesentium facilis aliquid sit obcaecati, totam voluptas deleniti officia sunt sequi hic cumque dolor reiciendis exercitationem, doloremque impedit repellendus cum alias ab corrupti quos! Odio asperiores, in magnam porro libero doloremque neque ad, veritatis laborum recusandae, culpa quidem rerum. Accusantium fuga fugiat similique sequi, explicabo quis maxime minus voluptatum labore sint libero quaerat nisi amet praesentium tempore repudiandae sunt unde nobis adipisci. Porro ullam ipsa veniam, consequuntur sed velit ea fugiat explicabo ipsum excepturi culpa laudantium veritatis aspernatur. Mollitia voluptatem ex reprehenderit consectetur sit, quis quaerat, tempora labore optio obcaecati maiores temporibus nam ipsa facere natus asperiores nostrum perferendis officia deleniti repellat ducimus dolores? Dignissimos dolore illum porro neque optio dolorem possimus aperiam fugit nulla, odit quas fugiat quod corporis consectetur hic quaerat impedit similique quam, provident cum. Eligendi voluptatibus fugit quis quae labore! Nam distinctio error sunt nulla, eius a nostrum perspiciatis animi blanditiis molestias beatae praesentium reprehenderit hic placeat laudantium sapiente nisi officia porro commodi libero nesciunt ab repellendus alias! Consequuntur quaerat quod corporis sapiente atque magnam molestias velit impedit. Libero vel porro iusto necessitatibus repudiandae odit facere quas quo, cupiditate, quidem, magni suscipit laudantium earum quisquam eveniet tempore laboriosam! Minus illo dolorem perferendis ratione rerum distinctio ea eos est, doloremque architecto iure alias numquam adipisci maxime, inventore in asperiores totam doloribus recusandae placeat aut soluta dolorum? Rerum illo ullam saepe, magni consectetur ab. Eaque doloribus porro laboriosam vitae, optio nulla in eligendi consectetur facere eum, amet magni qui rem magnam saepe sint maxime deserunt reprehenderit laborum culpa eos! Consequuntur minima animi veniam. Distinctio cupiditate consequuntur esse minima provident repellendus, blanditiis, cumque fugiat quae a temporibus delectus omnis ea praesentium rem? Dolorum provident, sapiente assumenda omnis ullam necessitatibus fugit voluptates fuga quibusdam, asperiores deleniti laboriosam vitae doloremque aliquid est ad voluptate! Ad corrupti aut dolores expedita minus iste tempora dicta, excepturi nihil dolore? Adipisci ea id molestiae dignissimos. Maxime veniam omnis voluptate tempore dolorem ea itaque sequi voluptas, perferendis qui non quae iure autem, nesciunt perspiciatis, a laborum ipsum unde et. Ex ipsa dicta dignissimos, expedita tenetur ut mollitia sequi a asperiores explicabo aspernatur totam voluptatum libero modi esse fugit odio, vel accusamus alias veniam quas sint? Nostrum deleniti, iste modi quaerat obcaecati ut nam neque vitae qui porro, consequuntur repellat quo quisquam natus blanditiis nemo ratione libero at in saepe. Amet rerum fuga libero, nobis accusantium delectus, odio laboriosam nulla corporis atque excepturi, consequatur culpa corrupti omnis unde ratione blanditiis quaerat nisi voluptas obcaecati officiis sapiente molestiae praesentium veniam! Quaerat tempore sed ipsam sit eaque?
+
+    </p>
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+        
+        let txt = document.getElementsByClassName('text');
+        if(color == '#000000'){
+            for(let elm of txt){
+                elm.style.color = "white"
+            }
+        }
+        else{
+            for(let elm of txt){
+                elm.style.color = "black"
+                }
+        }
+
+    }
+    </script>
+</body>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 100px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: aquamarine;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{ 
+           width: 1000px; 
+        }
+        .sticky{
+            position: fixed;
+            top:0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- sticky menu -->
+            <div id="header">
+                <img src="download.jpg" id="logo" alt="">
+            </div>
+            <nav id="menu-bar" >
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>OUR TEAM</li>
+                <li>CLIENT</li>
+                <li>CONTRACT US</li>
+            </nav>
+            <div id="container">
+                <h1>ABOUT US</h1>
+                <img src="food1.jpg" id="about-img" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit velit illum, accusamus dolores non officiis aliquam voluptatum eaque quidem eos ipsa quia at magni veritatis modi ex a quibusdam. Mollitia!Lorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias eos ullam quod voluptatum at quae a, distinctio ducimus soluta? Incidunt nihil facilis ipsa? Similique, quam cumque repudiandae incidunt laudantium eveniet aliquam non magni porro voluptatem quae soluta, doloribus recusandae ea perferendis blanditiis consectetur obcaecati. Minus odio, illo sint eaque similique autem eos ab praesentium consequuntur sapiente fugiat laboriosam itaque incidunt nostrum aliquam animi placeat asperiores tenetur error perferendis a cupiditate inventore ex? Dicta sunt ad voluptatibus assumenda ipsa repellat aspernatur, amet nisi impedit accusantium quis sed quas doloribus non animi soluta eligendi dolore ratione exercitationem. Accusantium fuga sit alias?
+                </p>
+            </div>
+            <script>
+                window.addEventListener('scroll',function(){
+                    let navbar=document.getElementById("menu-bar");
+                    if(window.pageYOffset >= 72){
+                       navbar.classList.add('sticky');
+                    }
+                    else{
+                       navbar.classList.remove('sticky');
+                    }
+                });
+            </script>
+</body>
